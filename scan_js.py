@@ -9,7 +9,7 @@ def get_links_js_files():
 
 
 def download_js_files():
-	js_path=''
+
 	os.system('mkdir downloaded_js_files')
 	for link in linksArray:
 		try:
@@ -29,6 +29,7 @@ def download_js_files():
 				print("error")
 
 def search_files_for_links():
+	
 	print("Searching Files")
 	urls=[]
 	all_files=os.listdir('downloaded_js_files/')
